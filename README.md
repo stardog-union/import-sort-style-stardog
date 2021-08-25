@@ -25,3 +25,18 @@ Or `package.json`
     }
 }
 ```
+
+## Style
+
+```
+import "foo"
+
+import "./foo"
+
+import … from "foo";
+
+import … from "src/foo";
+
+import … from "./foo";
+import … from "../foo";
+```
