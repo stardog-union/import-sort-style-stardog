@@ -4,7 +4,7 @@ Stardog [import-sort](https://github.com/renke/import-sort) styles
 
 ## Usage
 
-Install [import-sort-style-stardog](https://www.npmjs.com/package/import-sort-style-stardog)
+Install [import-sort-style-stardog](https://github.com/stardog-union/import-sort-style-stardog)
 
 In `.importsortrc`
 
