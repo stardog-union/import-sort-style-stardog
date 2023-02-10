@@ -24,12 +24,20 @@ module.exports = function (styleApi) {
 
     // import … from "foo";
     {
-      match: and(isAbsoluteModule, not(moduleName(startsWith("src")))),
+      match: and(isAbsoluteModule, not(moduleName(startsWith("bones"))), not(moduleName(startsWith("src")))),
       sort: moduleName(naturally),
       sortNamedMembers: alias(unicode),
     },
     { separator: true },
 
+    // import … from "bones/foo";
+    {
+      match: and(isAbsoluteModule, moduleName(startsWith("bones"))),
+      sort: moduleName(naturally),
+      sortNamedMembers: alias(unicode),
+    },
+    { separator: true },
+    
     // import … from "src/foo";
     {
       match: and(isAbsoluteModule, moduleName(startsWith("src"))),
