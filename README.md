@@ -35,6 +35,8 @@ import "./foo"
 
 import … from "foo";
 
+import … from "bones/foo";
+
 import … from "src/foo";
 
 import … from "./foo";
