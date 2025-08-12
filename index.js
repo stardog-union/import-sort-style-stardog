@@ -69,7 +69,7 @@ module.exports = function (styleApi) {
     },
     { separator: true },
 
-    // import … from "src/foo";
+    // import … from "src/foo.module.scss";
     {
       match: and(
         isAbsoluteModule,
